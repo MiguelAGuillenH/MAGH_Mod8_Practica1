@@ -13,4 +13,6 @@
     <color name="PM_green">#FF34E36A</color>
     <color name="PM_dark_green">#FF00531F</color>
     <color name="PM_darker_green">#FF003913</color>
+
+    <color name="PM_faded_black">#801A1C19</color>
 </resources>

@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.magh.mod6practica2"
+    namespace = "com.magh.mod8practica1"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.magh.mod6practica2"
+        applicationId = "com.magh.mod8practica1"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

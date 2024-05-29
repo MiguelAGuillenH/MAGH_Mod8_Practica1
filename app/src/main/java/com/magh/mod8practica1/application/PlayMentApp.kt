@@ -1,8 +1,8 @@
-package com.magh.mod6practica2.application
+package com.magh.mod8practica1.application
 
 import android.app.Application
-import com.magh.mod6practica2.data.PlayMentRepository
-import com.magh.mod6practica2.data.remote.RetrofitHelper
+import com.magh.mod8practica1.data.PlayMentRepository
+import com.magh.mod8practica1.data.remote.RetrofitHelper
 
 class PlayMentApp: Application() {
 

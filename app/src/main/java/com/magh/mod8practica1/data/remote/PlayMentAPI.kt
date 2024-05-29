@@ -1,7 +1,7 @@
-package com.magh.mod6practica2.data.remote
+package com.magh.mod8practica1.data.remote
 
-import com.magh.mod6practica2.data.remote.model.TrackDTO
-import com.magh.mod6practica2.data.remote.model.TrackDetailDTO
+import com.magh.mod8practica1.data.remote.model.TrackDTO
+import com.magh.mod8practica1.data.remote.model.TrackDetailDTO
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path

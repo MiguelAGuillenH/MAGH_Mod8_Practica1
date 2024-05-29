@@ -1,8 +1,8 @@
-package com.magh.mod6practica2.ui.adapters
+package com.magh.mod8practica1.ui.adapters
 
 import androidx.recyclerview.widget.RecyclerView
-import com.magh.mod6practica2.data.remote.model.TrackDTO
-import com.magh.mod6practica2.databinding.TrackItemBinding
+import com.magh.mod8practica1.data.remote.model.TrackDTO
+import com.magh.mod8practica1.databinding.TrackItemBinding
 import com.squareup.picasso.Picasso
 
 class TrackViewHolder(private var binding: TrackItemBinding): RecyclerView.ViewHolder(binding.root) {

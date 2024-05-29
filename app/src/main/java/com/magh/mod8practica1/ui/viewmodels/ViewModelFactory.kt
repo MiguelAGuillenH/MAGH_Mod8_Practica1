@@ -1,8 +1,8 @@
-package com.magh.mod6practica2.ui.viewmodels
+package com.magh.mod8practica1.ui.viewmodels
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.magh.mod6practica2.data.PlayMentRepository
+import com.magh.mod8practica1.data.PlayMentRepository
 
 @Suppress("UNCHECKED_CAST")
 class TracksListViewModelFactory(private val repository: PlayMentRepository): ViewModelProvider.Factory {

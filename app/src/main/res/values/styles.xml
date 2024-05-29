@@ -8,6 +8,6 @@
         <item name="windowSplashScreenAnimatedIcon">@drawable/anim_playment</item>
         <!--<item name="windowSplashScreenIconBackgroundColor">@color/PM_dark_gray</item>-->
         <item name="windowSplashScreenAnimationDuration">2000</item>
-        <item name="postSplashScreenTheme">@style/Theme.Mod6Practica2</item>
+        <item name="postSplashScreenTheme">@style/Theme.Mod8Practica1</item>
     </style>
 </resources>

@@ -1,4 +1,4 @@
-package com.magh.mod6practica2.utils
+package com.magh.mod8practica1.utils
 
 import android.content.Context
 import androidx.annotation.StringRes

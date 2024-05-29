@@ -1,4 +1,4 @@
-package com.magh.mod6practica2.data.remote.model
+package com.magh.mod8practica1.data.remote.model
 
 import com.google.gson.annotations.SerializedName
 

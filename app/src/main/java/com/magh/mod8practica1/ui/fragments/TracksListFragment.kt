@@ -1,5 +1,6 @@
-package com.magh.mod6practica2.ui.fragments
+package com.magh.mod8practica1.ui.fragments
 
+import android.media.MediaPlayer
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
@@ -9,17 +10,19 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.snackbar.Snackbar
-import com.magh.mod6practica2.R
-import com.magh.mod6practica2.application.PlayMentApp
-import com.magh.mod6practica2.databinding.FragmentTracksListBinding
-import com.magh.mod6practica2.ui.adapters.TrackAdapter
-import com.magh.mod6practica2.ui.viewmodels.TracksListViewModel
-import com.magh.mod6practica2.ui.viewmodels.TracksListViewModelFactory
+import com.magh.mod8practica1.R
+import com.magh.mod8practica1.application.PlayMentApp
+import com.magh.mod8practica1.databinding.FragmentTracksListBinding
+import com.magh.mod8practica1.ui.adapters.TrackAdapter
+import com.magh.mod8practica1.ui.viewmodels.TracksListViewModel
+import com.magh.mod8practica1.ui.viewmodels.TracksListViewModelFactory
 
 class TracksListFragment : Fragment() {
 
     private var _binding: FragmentTracksListBinding? = null
     private val binding get() = _binding!!
+
+    private lateinit var mediaPlayer: MediaPlayer
 
     //Variables for MVVM
     private val tracksListViewModel: TracksListViewModel by activityViewModels {
@@ -46,11 +49,17 @@ class TracksListFragment : Fragment() {
         //Configure tracks list
         trackAdapter = TrackAdapter()
         //Click on track
-        trackAdapter.onTrackClicked = {track ->
-            requireActivity().supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container,TrackDetailFragment.newInstance(track.id.toString()))
-                .addToBackStack(null)
-                .commit()
+        trackAdapter.onTrackClicked = { track ->
+            //Play Click
+            mediaPlayer = MediaPlayer.create(requireContext(), R.raw.click)
+            mediaPlayer.start()
+            //On completion, go to details fragment
+            mediaPlayer.setOnCompletionListener {
+                requireActivity().supportFragmentManager.beginTransaction()
+                    .replace(R.id.fragment_container,TrackDetailFragment.newInstance(track.id.toString()))
+                    .addToBackStack(null)
+                    .commit()
+            }
         }
         binding.tracksList.apply {
             layoutManager = LinearLayoutManager(requireContext())

@@ -1,20 +1,23 @@
-package com.magh.mod6practica2.ui.fragments
+package com.magh.mod8practica1.ui.fragments
 
 import android.icu.text.SimpleDateFormat
+import android.net.Uri
 import android.os.Bundle
 import android.text.format.DateUtils
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.MediaController
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import com.google.android.material.snackbar.Snackbar
-import com.magh.mod6practica2.R
-import com.magh.mod6practica2.application.PlayMentApp
-import com.magh.mod6practica2.databinding.FragmentTrackDetailBinding
-import com.magh.mod6practica2.ui.viewmodels.TrackDetailViewModel
-import com.magh.mod6practica2.ui.viewmodels.TrackDetailViewModelFactory
+import com.magh.mod8practica1.R
+import com.magh.mod8practica1.application.PlayMentApp
+import com.magh.mod8practica1.databinding.FragmentTrackDetailBinding
+import com.magh.mod8practica1.ui.viewmodels.TrackDetailViewModel
+import com.magh.mod8practica1.ui.viewmodels.TrackDetailViewModelFactory
 import com.squareup.picasso.Picasso
 import jp.wasabeef.picasso.transformations.BlurTransformation
 import java.util.Locale
@@ -92,6 +95,13 @@ class TrackDetailFragment : Fragment() {
                     .load(track.albumCover)
                     .transform(BlurTransformation(requireContext()))
                     .into(imgBackground)
+
+                binding.vvVideo.setVideoURI(Uri.parse(track.videoUrl))
+                Log.d("MediaPlayer_TunaSort", track.videoUrl!!)
+                val mc = MediaController(requireContext())
+                mc.setAnchorView(binding.vvVideo)
+                binding.vvVideo.setMediaController(mc)
+                binding.vvVideo.start()
 
                 detailsView.visibility = View.VISIBLE
             }

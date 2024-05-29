@@ -1,8 +1,6 @@
-package com.magh.mod6practica2.data.remote
+package com.magh.mod8practica1.data.remote
 
-import com.magh.mod6practica2.utils.Constants
-import okhttp3.OkHttpClient
-import okhttp3.logging.HttpLoggingInterceptor
+import com.magh.mod8practica1.utils.Constants
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

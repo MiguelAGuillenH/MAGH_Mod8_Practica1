@@ -1,18 +1,17 @@
-package com.magh.mod6practica2.ui
+package com.magh.mod8practica1.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import com.magh.mod6practica2.R
-import com.magh.mod6practica2.databinding.ActivityMainBinding
-import com.magh.mod6practica2.ui.fragments.TracksListFragment
+import com.magh.mod8practica1.R
+import com.magh.mod8practica1.databinding.ActivityMainBinding
+import com.magh.mod8practica1.ui.fragments.TracksListFragment
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
 
         super.onCreate(savedInstanceState)
 

@@ -1,4 +1,4 @@
-package com.magh.mod6practica2.data.remote.model
+package com.magh.mod8practica1.data.remote.model
 
 import com.google.gson.annotations.SerializedName
 
@@ -32,6 +32,9 @@ data class TrackDetailDTO (
     var duration: Int? = null,
 
     @SerializedName("preview")
-    var preview: String? = null
+    var preview: String? = null,
+
+    @SerializedName("video_url")
+    var videoUrl: String? = null
 
 )

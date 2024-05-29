@@ -1,4 +1,4 @@
-package com.magh.mod6practica2
+package com.magh.mod8practica1
 
 import org.junit.Test
 

@@ -1,8 +1,8 @@
-package com.magh.mod6practica2.data
+package com.magh.mod8practica1.data
 
-import com.magh.mod6practica2.data.remote.PlayMentAPI
-import com.magh.mod6practica2.data.remote.model.TrackDTO
-import com.magh.mod6practica2.data.remote.model.TrackDetailDTO
+import com.magh.mod8practica1.data.remote.PlayMentAPI
+import com.magh.mod8practica1.data.remote.model.TrackDTO
+import com.magh.mod8practica1.data.remote.model.TrackDetailDTO
 import retrofit2.Call
 import retrofit2.Retrofit
 

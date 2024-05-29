@@ -1,15 +1,15 @@
-package com.magh.mod6practica2.ui.viewmodels
+package com.magh.mod8practica1.ui.viewmodels
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.magh.mod6practica2.R
-import com.magh.mod6practica2.data.PlayMentRepository
-import com.magh.mod6practica2.data.remote.model.TrackDTO
-import com.magh.mod6practica2.utils.StringValue
-import com.magh.mod6practica2.utils.StringValue.DynamicString
-import com.magh.mod6practica2.utils.StringValue.StringResource
+import com.magh.mod8practica1.R
+import com.magh.mod8practica1.data.PlayMentRepository
+import com.magh.mod8practica1.data.remote.model.TrackDTO
+import com.magh.mod8practica1.utils.StringValue
+import com.magh.mod8practica1.utils.StringValue.DynamicString
+import com.magh.mod8practica1.utils.StringValue.StringResource
 import kotlinx.coroutines.launch
 import retrofit2.Call
 import retrofit2.Callback
